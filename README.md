@@ -1,2 +1,1 @@
 # Goalbox.ai
-# Goalbox.ai

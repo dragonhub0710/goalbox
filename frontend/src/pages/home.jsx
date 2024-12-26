@@ -1,10 +1,18 @@
-import React, { useEffect, useState, useRef } from "react";
-import { Avatar, Button } from "@material-tailwind/react";
+import React from "react";
+import { Sidebar } from "@/widgets/sidebar/sidebar";
+import { MainContent } from "@/widgets/mainContent/mainContent";
+import { NewChat } from "@/widgets/newChat/newChat";
 
 export function Home() {
   return (
     <>
-      <div className="relative flex h-screen w-full"></div>
+      <div className="relative flex h-screen w-full">
+        <Sidebar />
+        <MainContent />
+        <div className="absolute bottom-0 right-10">
+          <NewChat />
+        </div>
+      </div>
     </>
   );
 }
